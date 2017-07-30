@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13FF7525-E05D-4C82-AB3A-B62D83D0BC1E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AIEBOT</RootNamespace>
+    <AssemblyName>AIEBOT</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>http://localhost/AIEBOT/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AIMLbot, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AIMLbot.dll</HintPath>
+    </Reference>
+    <Reference Include="Animaonline Weather API, Version=2.5.0.0, Culture=neutral, PublicKeyToken=5808f2d90955dcf7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Animaonline Weather API.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomAIMLTags, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\CustomAIMLTags.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AvatarGestos\ActionUnit.cs" />
+    <Compile Include="AvatarGestos\Emotions.cs" />
+    <Compile Include="Busqueda\SearchTopic.cs" />
+    <Compile Include="Chat\Dlgbehavior.cs" />
+    <Compile Include="Dlls\ASRDllImport.cs" />
+    <Compile Include="Chat\ChatBot.cs" />
+    <Compile Include="Dlls\Constants.cs" />
+    <Compile Include="Dlls\IPCDllImport.cs" />
+    <Compile Include="FuncionesSQLServer\claseFunciones.cs" />
+    <Compile Include="FuncionesSQLServer\FuncionesIni.cs" />
+    <Compile Include="Busqueda\Generator.cs" />
+    <Compile Include="Busqueda\Properties.cs" />
+    <Compile Include="Encuesta\Preguntas.cs" />
+    <Compile Include="Principal.cs">
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Encuesta\Visualizar.cs" />
+    <Compile Include="WebApp\Conditions.cs" />
+    <Compile Include="Busqueda\GMapsXML.cs" />
+    <Compile Include="WebApp\Constantes.cs" />
+    <Compile Include="WebApp\HelpImg.cs" />
+    <Compile Include="WebApp\SacarinoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebApp\SacarinoForm.Designer.cs">
+      <DependentUpon>SacarinoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Weather.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebApp\SacarinoForm.resx">
+      <DependentUpon>SacarinoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\character\Sacarino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Textures\barraH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Textures\barraV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Logos\Logo_CartifH.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\ImgIco\icono_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\ImgIco\icono_tiempo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\ImgIco\icono_busqueda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\ImgIco\icono_Hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\ImgIco\BotRojo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Textures\Splash.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\ImgIco\BotNegro.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\MarcosAyuda\OpcionesPrincipal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Planos\PlanoHotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\MarcosAyuda\OpcionesWeather.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\MarcosAyuda\MarcoOwnInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\MarcosAyuda\MarcoRest.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
